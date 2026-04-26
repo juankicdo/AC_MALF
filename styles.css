@@ -678,12 +678,7 @@ body {
   padding: 2rem;
 }
 
-.grid-productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
+
 
 /* IMÁGENES */
 .category-item img {
@@ -830,3 +825,227 @@ body {
   font-weight: 500;
 }
 
+/* ========================= */
+/* MEJORA SOLO VERSION MOVIL */
+/* ========================= */
+
+@media (max-width: 768px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  /* Logo */
+  .logo{
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .tagline{
+    font-size: .8rem;
+    letter-spacing: 4px;
+  }
+
+  /* Botón menú */
+  .menu-btn{
+    top: 15px;
+    left: 15px;
+    padding: 10px 12px;
+    font-size: 1.1rem;
+  }
+
+  /* Menú lateral */
+  .side-menu{
+    width: 240px;
+    left: -260px;
+  }
+
+  /* Imagen principal */
+  .hero-logo-img{
+    width: 170px;
+    height: 170px;
+  }
+
+  /* Categorías */
+  .categories-section{
+    padding: 1rem;
+  }
+
+  .categories-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+  }
+
+  .category-item{
+    padding: 1rem;
+  }
+
+  .category-icon{
+    font-size: 2rem;
+  }
+
+  .category-item h3{
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  /* Productos destacados */
+  .featured-section{
+    padding: 1rem;
+  }
+
+  .section-title{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-content{
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer-section p{
+    justify-content: center;
+  }
+
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 480px){
+
+  .logo{
+    font-size: 1.6rem;
+  }
+
+  .tagline{
+    font-size: .75rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-logo-img{
+    width: 140px;
+    height: 140px;
+  }
+
+  .categories-grid{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .category-item{
+    padding: .9rem;
+  }
+
+  .category-item h3{
+    font-size: 12px;
+  }
+
+  .footer-bottom{
+    padding: 1rem;
+    font-size: 13px;
+  }
+
+}
+
+
+/* CONTENEDOR */
+.contenedor{
+    max-width:1200px;
+    margin:auto;
+    padding:2rem;
+}
+
+/* GRID PRODUCTOS */
+.grid-productos{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+
+/* PRODUCTO */
+.category-item{
+    background:#fff;
+    padding:1rem;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN RESPONSIVE REAL */
+.category-item img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* PRECIO */
+.category-item p{
+    margin-top:10px;
+    color:#333;
+    font-weight:bold;
+}
+
+/* NAV */
+.navigation{
+    background:#fff;
+}
+
+.nav-menu{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
+    padding:1rem;
+    list-style:none;
+}
+
+/* FOOTER */
+.footer{
+    background:#333;
+    color:white;
+    padding:2rem;
+    margin-top:3rem;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:2rem;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.whatsapp-float a{
+    background:#25d366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* 📱 MOBILE */
+@media (max-width:768px){
+
+    .grid-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:480px){
+
+    .grid-productos{
+        grid-template-columns: 1fr;
+    }
+
+}
